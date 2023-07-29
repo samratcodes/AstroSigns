@@ -1,0 +1,18 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url(https://images.pexels.com/photos/1146134/pexels-photo-1146134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: rgba(245, 245, 220, 0.476);
+}
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  font-size: 2rem;
+}
+
