@@ -1,10 +1,10 @@
 body{
-    font-family: 'Lobster', cursive;
+    font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content: center;
-    background-image: url(https://mindbodygreen-res.cloudinary.com/image/upload/c_fill,w_2000,h_1200,g_auto,fl_lossy,f_jpg/org/4qpiefgrjkebjn95u.jpg);
+    background-image: url(https://hips.hearstapps.com/hmg-prod/images/solar-system-royalty-free-image-1649969440.jpg);
     background-repeat: no-repeat;
     background-size: cover ;
     padding: 0;
@@ -17,21 +17,17 @@ nav{
   align-items: center;
   width: 100%;
   height: 4rem;
-  /* background-image: url(https://images.pexels.com/photos/1146134/pexels-photo-1146134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-   background-repeat: no-repeat;
-   background-size: cover ; */
+ background: linear-gradient(to top right,rgba(0, 0, 0, 0.293),rgba(0, 0, 0, 0.293), rgb(247,97,1), #f3dc58,rgba(0, 0, 0, 0.293), rgba(0, 0, 0, 0.3));
       overflow: hidden;
-      border-bottom:2px solid rgb(255, 255, 255) ;
+      color: rgba(255, 255, 255, 0.805);
+      font-weight: bold;
 }
  img{
-  width: 6rem;
+  width: 7rem;
   animation: rotationBack 800ms infinite reverse;
 }
 
 @keyframes rotationBack {
- 0% {
-    transform: rotate(0deg);
-  } 
   100% {
     transform: rotate(-360deg);
   }
@@ -45,13 +41,38 @@ nav{
 }
 form{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     margin-top: 1rem;
-    background-color: rgba(245, 245, 220, 0.476);
+    background-color: rgba(255, 255, 255, 0.217);
+    height: 10rem;
+    width: 20rem;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    font-weight: 800;
+    overflow: hidden;
 }
 input[type="datetime-local"]::-webkit-calendar-picker-indicator {
   font-size: 2rem;
+   color: rgb(255, 255, 255);
+}
+input[type="datetime-local"]{
+  font-size: 1.4rem;
+  background-color:rgba(255, 255, 255, 0.952);
+  border-radius: 2rem;
+   color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+input[type="submit"]{
+  color: #ffffff;
+  width: 8rem;
+  height: 3rem;
+ background: linear-gradient(to top right, rgb(247,97,1), #f3dc58);
+ border: none;
+ border-radius: 2rem;
+ font-size: 1.4rem;
+ font-weight: 600;
 }
 
 
