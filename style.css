@@ -64,7 +64,7 @@ input[type="datetime-local"]{
    color: rgb(0, 0, 0);
     font-weight: 600;
 }
-input[type="submit"]{
+button{
   color: #ffffff;
   width: 8rem;
   height: 3rem;
@@ -73,6 +73,18 @@ input[type="submit"]{
  border-radius: 2rem;
  font-size: 1.4rem;
  font-weight: 600;
+}
+.trytext , .trytexts{
+  margin-top: 1rem;
+  background-color: #f3dc5858;
+  font-size: 2rem;
+}
+@media screen and (max-width:800px) {
+  body{
+    color: rgb(0, 0, 0);
+   align-items: center;
+   justify-content: center;
+  }
 }
 
 
