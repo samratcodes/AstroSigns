@@ -4,7 +4,7 @@ body{
     flex-direction: column;
     align-items:center;
     justify-content: center;
-    background-image: url(https://hips.hearstapps.com/hmg-prod/images/solar-system-royalty-free-image-1649969440.jpg);
+    background-image: url(Astro.jpg);
     background-repeat: no-repeat;
     background-size: cover ;
     padding: 0;
@@ -37,7 +37,7 @@ nav{
   transition: 500ms;
 }
 .top-text{
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 form{
     display: flex;
@@ -73,6 +73,16 @@ button{
  border-radius: 2rem;
  font-size: 1.4rem;
  font-weight: 600;
+   transition: 200ms;
+}
+button:active {
+  transition: 200ms;
+  transform: scale(0.96);
+  
+}
+button:hover {
+  background: rgb(193, 228, 248);
+  color: rgb(33, 0, 85);
 }
 .trytext , .trytexts{
   margin-top: 1rem;
