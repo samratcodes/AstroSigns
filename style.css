@@ -22,7 +22,7 @@ nav{
       color: rgba(255, 255, 255, 0.805);
       font-weight: bold;
 }
- img{
+ .logo img{
   width: 7rem;
   animation: rotationBack 800ms infinite reverse;
 }
@@ -32,10 +32,7 @@ nav{
     transform: rotate(-360deg);
   }
 }
- img:hover{
-  transform: scaleY(1.5);
-  transition: 500ms;
-}
+ 
 .top-text{
   font-size: 2.6rem;
 }
@@ -73,21 +70,32 @@ button{
  border-radius: 2rem;
  font-size: 1.4rem;
  font-weight: 600;
-   transition: 200ms;
+   transition: 60ms;
+   box-shadow: 0 20px 30px -6px  rgb(193, 135, 2);
 }
 button:active {
-  transition: 200ms;
-  transform: scale(0.96);
-  
+  transform: translateY(3px);
+  box-shadow: none;
+   color: rgb(0, 0, 0);
 }
 button:hover {
-  background: rgb(193, 228, 248);
-  color: rgb(33, 0, 85);
+ border:2px solid #ffffff;
 }
-.trytext , .trytexts{
-  margin-top: 1rem;
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
   background-color: #f3dc5858;
   font-size: 2rem;
+}
+.image_container{
+  height: 20rem;
+  overflow: hidden;
+}
+.card img{
+width:50%;
 }
 @media screen and (max-width:800px) {
   body{
