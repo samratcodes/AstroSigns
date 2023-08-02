@@ -87,15 +87,39 @@ button:hover {
   justify-content: center;
   align-items: center;
   margin: 1rem;
-  background-color: #f3dc5858;
+  background-color: #f3dc587d;
   font-size: 2rem;
-}
-.image_container{
-  height: 20rem;
+  width: 50rem;
+  border-radius: 2rem;
+  color: rgb(217, 217, 217);
   overflow: hidden;
+  border: 3px solid rgb(92, 95, 12); 
+  transition: 500ms;
 }
-.card img{
-width:50%;
+.card:hover{
+transform: scale(1.05);
+transition: 500ms;
+.container{
+  transition: 500ms;
+  background-color: #a78f0a;
+  color: #ffffff;
+}
+}
+.Title{
+background-color:rgb(53, 43, 7);
+  box-sizing: border-box;
+  padding: 1rem;
+  height: max-content;
+  width: 100%;
+  overflow: hidden;
+  transition: 500ms;
+}
+.image_container img{
+width:10rem;
+}
+.container{
+  padding: 1rem;
+   font-weight: 600;
 }
 @media screen and (max-width:800px) {
   body{
@@ -103,6 +127,14 @@ width:50%;
    align-items: center;
    justify-content: center;
   }
+  .card{
+    width: 80%;
+    font-size: 1.2rem;
+   margin:1rem 0.5rem 0.5rem 0.5rem;
+  }
+  .container{
+  padding: 0.1rem;
+}
 }
 
 
