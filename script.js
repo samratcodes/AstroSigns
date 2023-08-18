@@ -31,11 +31,31 @@ const rashi = [
   "कुम्भ: मूल पनि आदर्शका, स्वतन्त्र मानिसहरू। उनीहरू समाजमा सकारात्मक प्रभाव गर्नका लागि प्रायोजनको लागि उत्कृष्ट प्रयास गर्दछन् र उनीहरूको अनौपचारिकता अवश्यमै आकर्षित गर्दछ।",
   "मीन: सहानुभूतिपूर्ण र सृजनात्मक, मजाकवाटमा गहिरो सम्बन्ध बनाउँछन्। उनीहरू सपनाहरू साथै आत्माको भावनासम्मको गहिरो सम्बन्ध बनाउँछन् " ]
 
-Submit.addEventListener('click',function(e){
-    e.preventDefault()
-     console.log(date.value);
-    date.value=''
+Submit.addEventListener("click", function (e) {
+  e.preventDefault();
+  if (date.value) {
+    let zodiacdate = date.value.split("-");
+    let day = parseInt(zodiacdate[2]);
+    let month = parseInt(zodiacdate[1]);
 
-   
-classtext.scrollIntoView({behavior:'smooth'});
-})
+    // Calculate the zodiac sign index for the Western zodiac system
+    let zodiacIndex = (month - 1) * 3 + (day < 21 ? 0 : day < 21 + 21 ? 1 : 2);
+    if (zodiacIndex >= zodiacSigns.length) {
+      zodiacIndex = 0; // Wrap around to the first sign
+    }
+    let zodiacSignDescription = zodiacSigns[zodiacIndex];
+
+    // Calculate the rashi index for the Nepali zodiac system
+    let rashiIndex = (month - 1) * 3 + (day < 21 ? 0 : day < 21 + 21 ? 1 : 2);
+    if (rashiIndex >= rashi.length) {
+      rashiIndex = 0; // Wrap around to the first rashi
+    }
+    let rashiDescription = rashi[rashiIndex];
+
+    console.log("Zodiac Sign Description (English):", zodiacSignDescription);
+    console.log("Zodiac Sign Description (Nepali):", rashiDescription);
+
+    date.value = "";
+    classtext.scrollIntoView({ behavior: "smooth" });
+  }
+});
